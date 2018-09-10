@@ -1,17 +1,18 @@
+document.addEventListener("DOMContentLoaded", function() {
+    window.$ = window.jQuery;
 
+    if(!$("div").is(".user-profile")) {
+        console.log('не авторизован!!!');
 
-console.log('111111');
-window.$ = window.jQuery = require('jquery');
+        var form = $('#authform');
+        var formL = $(form).find('input#login')[0];
+        var formP = $(form).find('input#password')[0];
+        var formSubmitBtn = $(form).find(':submit')[0];
 
-$(function() {
-    console.log( "ready!" );
+        $(formL).val('kyav');
+        $(formP).val('F$5^td_mm');
+        $(formSubmitBtn).click()
+    }
 
-    var body = $('body');
-
-    var aa = document.getElementById('authform');
-
-    console.log(aa);
-    // console.log(form.find('input'));
+    console.log('юзер уже авторизован!!!');
 });
-
-
