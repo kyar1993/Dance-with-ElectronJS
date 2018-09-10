@@ -1,5 +1,17 @@
-var $ = require('jquery');
 
-// нашёл как делать запрос cors
-// var request = require('request');
-// var s = request.get('https://glavpunkt.ru/js/punkts-widget/glavpunkt.js');
+
+console.log('111111');
+window.$ = window.jQuery = require('jquery');
+
+$(function() {
+    console.log( "ready!" );
+
+    var body = $('body');
+
+    var aa = document.getElementById('authform');
+
+    console.log(aa);
+    // console.log(form.find('input'));
+});
+
+
